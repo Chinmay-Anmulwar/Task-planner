@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Planner AI</h1>
+      <p>Create structured plans from PDF or text input</p>
+    </header>
+
+    <section class="input-section">
+      <div class="upload-box">
+        <label for="pdfUpload">Upload PDF</label>
+        <input type="file" id="pdfUpload" accept=".pdf" />
+      </div>
+
+      <div class="or-divider">OR</div>
+
+      <div class="text-box">
+        <label for="taskText">Enter your task description</label>
+        <textarea id="taskText" rows="8" placeholder="Describe your tasks or goals here..."></textarea>
+      </div>
+
+      <button class="generate-btn">Generate Plan</button>
+    </section>
+
+    <section class="output-section">
+      <h2>Generated Plan</h2>
+      <div class="output-box">
+        <p>Your task plan will appear here after processing.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
