@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="close-btn" onclick="toggleSidebar()">✖</span>
+  </div>
+  <ul class="sidebar-menu">
+    <li>➕ New Chat</li>
+    <li>🕘 History</li>
+    <li>⚙️ Settings</li>
+  </ul>
+</div>
+
+<!-- Menu Toggle -->
+<div class="menu-toggle" onclick="toggleSidebar()">☰</div>
   <div class="container">
     <header>
       <h1>Task Planner AI</h1>
@@ -36,5 +50,13 @@
       </div>
     </section>
   </div>
+   <script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const toggle = document.querySelector('.menu-toggle');
+    sidebar.classList.toggle('active');
+        toggle.style.display = sidebar.classList.contains('active') ? 'none' : 'block';
+  }
+</script>
 </body>
 </html>
